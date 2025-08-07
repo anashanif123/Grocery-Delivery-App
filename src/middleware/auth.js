@@ -18,3 +18,4 @@ export const verifyToken = async (req, reply) => {
         return reply.status(403).send({ message: "Invalid or expired token" })
     }
 }
+
