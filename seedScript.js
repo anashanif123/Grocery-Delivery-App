@@ -2,9 +2,9 @@ import "dotenv/config.js"
 import mongoose from "mongoose";
 import { Category, Product } from "./src/models/index.js";
 import { categories, products } from "./seedData.js";
+// 6895a83a5a817013413834b2 bracnh id
 
-
-async function seedDatabase(params) {
+async function seedDatabase() {
 
     try {
         await mongoose.connect(process.env.MONGODB_URI);
